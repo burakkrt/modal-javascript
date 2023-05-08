@@ -9,9 +9,9 @@
 }
 
 .modal-overlay {
-  background-color: rgb(33, 42, 62,0.7);
+  background-color: rgb(33, 42, 62, 0.7);
   /*backdrop-filter: blur(15px);*/
-  color:white;
+  color: white;
   place-items: center;
   z-index: 11;
 }
@@ -20,10 +20,30 @@
   cursor: pointer;
 }
 
-.modal-open{
+.modal-open {
   visibility: visible;
 }
 
+.modal-content{
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
 .modal-content:hover {
- cursor: auto;
+  cursor: auto;
+}
+
+@media (min-width: 768px) {
+  .modal-content{
+    width: 80%!important;
+    height: auto!important;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-content{
+    width: 50%!important;
+  }
 }
