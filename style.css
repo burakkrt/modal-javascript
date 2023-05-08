@@ -1,26 +1,29 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.content-body {
+  background: url(houses-5002_512.gif) center no-repeat;
+  background-size: cover;
 }
 
-html {
-  font-size: 62.5%;
+.modal-buttons {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(15px);
 }
 
-body {
-  font-size: 1.6rem;
+.modal-overlay {
+  background-color: rgb(33, 42, 62,0.7);
+  /*backdrop-filter: blur(15px);*/
+  color:white;
+  place-items: center;
+  z-index: 11;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.modal-overlay:hover {
+  cursor: pointer;
 }
 
-li {
-  list-style-type: none;
+.modal-open{
+  visibility: visible;
 }
 
-:root {
-
+.modal-content:hover {
+ cursor: auto;
 }
